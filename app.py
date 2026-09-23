@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify, render_template_string, send_from_directory, redirect, url_for
+from flask import Flask, request, jsonify, render_template
 import os
 import random
 import base64
@@ -8,7 +8,7 @@ from werkzeug.utils import secure_filename
 app = Flask(__name__)
 
 # লোকাল ফোল্ডার পাথ
-BASE_MEDIA_DIR = os.path.abspath("/storage/emulated/0/Ai Rubel")
+BASE_MEDIA_DIR = os.path.abspath("Ai_Rubel_Media")
 PHOTO_DIR = os.path.join(BASE_MEDIA_DIR, "ছবি")
 VIDEO_DIR = os.path.join(BASE_MEDIA_DIR, "ভিডিও")
 STUDENT_DIR = os.path.join(BASE_MEDIA_DIR, "স্টুডেন্ট_ফাইল")
